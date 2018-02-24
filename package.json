@@ -1,0 +1,20 @@
+{
+  "name": "clarity",
+  "version": "1.0.0",
+  "description": "An E2E testing Framework using Protractor and Cucumber.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nirmalya Mitra",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.0.0",
+    "protractor": "^5.3.0",
+    "typescript": "^2.7.2"
+  },
+  "dependencies": {
+    "@types/jasmine": "^2.8.6",
+    "jasminewd2": "^2.2.0"
+  }
+}
