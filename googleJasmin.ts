@@ -4,4 +4,5 @@ describe ("Goint to Write first test", ()=> {
     it("should pass without any issues", () => {
         browser.get("https://www.google.com");
     });
+    browser.sleep(5000);
 });
