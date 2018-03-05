@@ -6,7 +6,8 @@ export let config: Config = {
     browserName: 'chrome'
   },
   onPrepare: () => {
-    browser.waitForAngularEnabled(false)
+    browser.waitForAngularEnabled(false);
+    browser.driver.fullscreen();
 },
   specs: [ './googleJasmin.js' ],
   seleniumAddress: 'http://localhost:4444/wd/hub',

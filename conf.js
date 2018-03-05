@@ -8,6 +8,7 @@ exports.config = {
     },
     onPrepare: function () {
         protractor_1.browser.waitForAngularEnabled(false);
+        protractor_1.browser.driver.fullscreen();
     },
     specs: ['./googleJasmin.js'],
     seleniumAddress: 'http://localhost:4444/wd/hub',
