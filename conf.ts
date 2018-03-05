@@ -1,10 +1,13 @@
-import {Config} from 'protractor';
+import {Config, browser} from 'protractor';
 
 export let config: Config = {
   framework: 'jasmine',
   capabilities: {
     browserName: 'chrome'
   },
+  onPrepare: () => {
+    browser.waitForAngularEnabled(false)
+},
   specs: [ './googleJasmin.js' ],
   seleniumAddress: 'http://localhost:4444/wd/hub',
 
