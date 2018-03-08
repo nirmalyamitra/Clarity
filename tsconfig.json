@@ -1,7 +1,10 @@
 {
     "compilerOptions": {
         "sourceMap": true,
-        "module": "commonjs"
+        "module": "commonjs",
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
     },
     "exclude": [
         "node_modules"
