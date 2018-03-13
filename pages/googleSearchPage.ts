@@ -21,8 +21,8 @@ export class googleSearchPage extends basePage {
     // searchBox = element(by.name('q'));
     // searchButton = element(by.name('btnK'));
 
-    get() {
-        browser.get("http://www.google.com");
+    async get() {
+        await browser.get("http://www.google.com");
     }
 
 

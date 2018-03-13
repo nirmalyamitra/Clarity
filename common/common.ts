@@ -5,39 +5,39 @@ var date = new Date();
 
 export class common {
 
-    highlight(element){
+    async highlight(element){
         for (var i=0;i<10; i++){
-            browser.executeScript(
+            await browser.executeScript(
                 "arguments[0].setAttribute('style', arguments[1]);",
                 element, "color: red; border:3px solid red;");
 
-            browser.executeScript(
+            await browser.executeScript(
                 "arguments[0].setAttribute('style', arguments[1]);",
                 element, ""
             );
         }
     }
 
-    writeScreenShot(filename){
-        browser.takeScreenshot().then(function (png){
+    async writeScreenShot(filename){
+        await browser.takeScreenshot().then(function (png){
             var stream =fs.createWriteStream(filename);
             stream.write(new Buffer(png, 'base64'));
             stream.end();
         });
     }
 
-    waitforPage(pageUrl){
+    async waitforPage(pageUrl){
         let condition = ExpectedConditions.urlContains(pageUrl);
-        browser.wait(condition, 60000);
+        await browser.wait(condition, 60000);
     }
 
-    waitForElement(element){
+    async waitForElement(element){
         let condition =ExpectedConditions.presenceOf(element);
-        browser.wait(condition, 60000);
+        await browser.wait(condition, 60000);
     }
 
-    readCurrentUrl(){
-        browser.getCurrentUrl().then(function(url) {
+    async readCurrentUrl(){
+        await browser.getCurrentUrl().then(function(url) {
             var t = date.toTimeString();
             var time = t.slice(0,9)
             fs.appendFile('reports/url.txt',time+" ", function (err) {
