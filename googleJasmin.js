@@ -38,13 +38,17 @@ var _this = this;
 exports.__esModule = true;
 var googleSearchPage_1 = require("./pages/googleSearchPage");
 var common_1 = require("./common/common");
+var winston = require('winston');
 describe("Going to Write first test Using Page Object Model", function () {
     var googleSearch = new googleSearchPage_1.googleSearchPage();
     var global = new common_1.common();
     it("Should navigate to Google Page and Search for Dam", function () { return __awaiter(_this, void 0, void 0, function () {
         return __generator(this, function (_a) {
             switch (_a.label) {
-                case 0: return [4 /*yield*/, googleSearch.get()];
+                case 0:
+                    winston.log('info', 'Hello distributed log files!');
+                    winston.info('Hello again distributed logs');
+                    return [4 /*yield*/, googleSearch.get()];
                 case 1:
                     _a.sent();
                     return [4 /*yield*/, global.highlight(googleSearch.searchButton)];
@@ -53,17 +57,16 @@ describe("Going to Write first test Using Page Object Model", function () {
                     return [4 /*yield*/, global.readCurrentUrl()];
                 case 3:
                     _a.sent();
-                    return [4 /*yield*/, googleSearch.searchBox.sendKeys('Hello World')];
-                case 4:
-                    _a.sent();
+                    //await googleSearch.searchBox.sendKeys('Dam');
                     return [4 /*yield*/, global.writeScreenShot('reports/snaps/google.png')];
-                case 5:
+                case 4:
+                    //await googleSearch.searchBox.sendKeys('Dam');
                     _a.sent();
                     return [4 /*yield*/, googleSearch.searchButton.click()];
-                case 6:
+                case 5:
                     _a.sent();
                     return [4 /*yield*/, global.readCurrentUrl()];
-                case 7:
+                case 6:
                     _a.sent();
                     return [2 /*return*/];
             }

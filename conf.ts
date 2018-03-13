@@ -1,5 +1,6 @@
 import {Config, browser} from 'protractor';
 import fs = require('fs');
+var winston = require('winston');
 
 export let config: Config = {
   framework: 'jasmine',
@@ -13,6 +14,12 @@ export let config: Config = {
     fs.truncate('reports/url.txt', 0, function(){
       console.log('done')
     });
+
+    winston.configure({
+      transports: [
+        new (winston.transports.File)({ filename: 'reports/logger.txt' })
+      ]
+    });    
 
 },
   specs: [ './googleJasmin.js' ],
