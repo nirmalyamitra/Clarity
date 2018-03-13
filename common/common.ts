@@ -1,6 +1,7 @@
 import {browser, element, by, ExpectedConditions} from 'protractor';
 import { Buffer } from 'buffer';
 import fs = require('fs');
+var date = new Date();
 
 export class common {
 
@@ -35,9 +36,18 @@ export class common {
         browser.wait(condition, 60000);
     }
 
-    // elementLocator(element,elementIndex){
-    //     return element[elementIndex];
-    // }
+    readCurrentUrl(){
+        browser.getCurrentUrl().then(function(url) {
+            var t = date.toTimeString();
+            var time = t.slice(0,9)
+            fs.appendFile('reports/url.txt',time+" ", function (err) {
+                if (err) throw err;
+            });
+            fs.appendFile('reports/url.txt',url +"\n", function (err) {
+                if (err) throw err;
+              });
+          });
+    }
 
 
 }

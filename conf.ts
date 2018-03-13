@@ -1,4 +1,5 @@
 import {Config, browser} from 'protractor';
+import fs = require('fs');
 
 export let config: Config = {
   framework: 'jasmine',
@@ -8,6 +9,11 @@ export let config: Config = {
   onPrepare: () => {
     browser.waitForAngularEnabled(false);
     browser.driver.fullscreen();
+    
+    fs.truncate('reports/url.txt', 0, function(){
+      console.log('done')
+    });
+
 },
   specs: [ './googleJasmin.js' ],
   seleniumAddress: 'http://localhost:4444/wd/hub',

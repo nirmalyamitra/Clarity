@@ -1,6 +1,5 @@
 "use strict";
 exports.__esModule = true;
-var protractor_1 = require("protractor");
 var googleSearchPage_1 = require("./pages/googleSearchPage");
 var common_1 = require("./common/common");
 describe("Going to Write first test Using Page Object Model", function () {
@@ -9,11 +8,12 @@ describe("Going to Write first test Using Page Object Model", function () {
         var global = new common_1.common();
         googleSearch.get();
         global.highlight(googleSearch.searchButton);
+        global.readCurrentUrl();
         googleSearch.searchBox.sendKeys('Hello World');
         //global.writeScreenShot('google.png');
         googleSearch.searchButton.click();
+        global.readCurrentUrl();
         //global.waitforPage('Dam');
     });
-    protractor_1.browser.sleep(5000);
 });
 //# sourceMappingURL=googleJasmin.js.map

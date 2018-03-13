@@ -3,6 +3,7 @@ exports.__esModule = true;
 var protractor_1 = require("protractor");
 var buffer_1 = require("buffer");
 var fs = require("fs");
+var date = new Date();
 var common = /** @class */ (function () {
     function common() {
     }
@@ -26,6 +27,20 @@ var common = /** @class */ (function () {
     common.prototype.waitForElement = function (element) {
         var condition = protractor_1.ExpectedConditions.presenceOf(element);
         protractor_1.browser.wait(condition, 60000);
+    };
+    common.prototype.readCurrentUrl = function () {
+        protractor_1.browser.getCurrentUrl().then(function (url) {
+            var t = date.toTimeString();
+            var time = t.slice(0, 9);
+            fs.appendFile('reports/url.txt', time + " ", function (err) {
+                if (err)
+                    throw err;
+            });
+            fs.appendFile('reports/url.txt', url + "\n", function (err) {
+                if (err)
+                    throw err;
+            });
+        });
     };
     return common;
 }());
