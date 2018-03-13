@@ -35,5 +35,9 @@ export class common {
         browser.wait(condition, 60000);
     }
 
+    // elementLocator(element,elementIndex){
+    //     return element[elementIndex];
+    // }
+
 
 }

@@ -8,10 +8,10 @@ describe ("Going to Write first test Using Page Object Model", ()=> {
         let global =new common();
         googleSearch.get();
         global.highlight(googleSearch.searchButton);
-        googleSearch.searchBox.sendKeys('Dam');
+        googleSearch.searchBox.sendKeys('Hello World');
         //global.writeScreenShot('google.png');
         googleSearch.searchButton.click();
-        global.waitforPage('Dam');
+        //global.waitforPage('Dam');
 
     });
     browser.sleep(5000);

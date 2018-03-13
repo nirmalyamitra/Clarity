@@ -9,10 +9,10 @@ describe("Going to Write first test Using Page Object Model", function () {
         var global = new common_1.common();
         googleSearch.get();
         global.highlight(googleSearch.searchButton);
-        googleSearch.searchBox.sendKeys('Dam');
+        googleSearch.searchBox.sendKeys('Hello World');
         //global.writeScreenShot('google.png');
         googleSearch.searchButton.click();
-        global.waitforPage('Dam');
+        //global.waitforPage('Dam');
     });
     protractor_1.browser.sleep(5000);
 });
