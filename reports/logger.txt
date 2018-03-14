@@ -1,8 +1,2 @@
-{"level":"info","message":"Hello distributed log files!","timestamp":"2018-03-13T17:54:23.135Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2018-03-13T17:54:23.136Z"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2018-03-13T17:55:40.126Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2018-03-13T17:55:40.127Z"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2018-03-13T17:56:42.920Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2018-03-13T17:56:42.921Z"}
-{"level":"info","message":"Hello distributed log files!","timestamp":"2018-03-13T17:57:14.811Z"}
-{"level":"info","message":"Hello again distributed logs","timestamp":"2018-03-13T17:57:14.812Z"}
+{"level":"info","message":"Should navigate to Google Page and Search for Dam","timestamp":"2018-03-14T00:58:51.661Z"}
+{"level":"info","message":"Going to Write first test Using Page Object Model","timestamp":"2018-03-14T00:58:51.662Z"}
