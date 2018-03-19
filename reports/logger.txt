@@ -1,2 +1,2 @@
-{"level":"info","message":"Should navigate to Google Page and Search for Dam","timestamp":"2018-03-14T00:58:51.661Z"}
-{"level":"info","message":"Going to Write first test Using Page Object Model","timestamp":"2018-03-14T00:58:51.662Z"}
+{"level":"info","message":"Should navigate to Google Page and Search for Dam","timestamp":"2018-03-19T17:45:50.144Z"}
+{"level":"info","message":"Going to Write first test Using Page Object Model","timestamp":"2018-03-19T17:45:50.146Z"}

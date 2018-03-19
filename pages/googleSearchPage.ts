@@ -1,5 +1,6 @@
 import { browser, element, by, $$, $ } from 'protractor';
 import { idType, basePage } from './basePage';
+import {Network} from "chrome-debugging-client/dist/protocol/tot";
 
 const locators = {
     searchBox: {
@@ -22,7 +23,7 @@ export class googleSearchPage extends basePage {
     // searchButton = element(by.name('btnK'));
 
     async get() {
-        await browser.get("http://www.google.com");
+        await browser.get("http://www.google.co.in");
     }
 
 

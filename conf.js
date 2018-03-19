@@ -2,7 +2,7 @@
 exports.__esModule = true;
 var protractor_1 = require("protractor");
 var fs = require("fs");
-var winston = require('winston');
+var winston = require("winston");
 exports.config = {
     framework: 'jasmine',
     capabilities: {

@@ -49,10 +49,11 @@ describe("Going to Write first test Using Page Object Model", function () {
             googleSearch.get();
             global.highlight(googleSearch.searchButton);
             global.readCurrentUrl();
-            googleSearch.searchBox.sendKeys('Dam');
+            googleSearch.searchBox.sendKeys('Feluda');
             global.writeScreenShot('reports/snaps/google.png');
             googleSearch.searchButton.click();
             global.readCurrentUrl();
+            global.waitforPage('Feluda');
             return [2 /*return*/];
         });
     }); });

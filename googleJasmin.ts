@@ -12,11 +12,11 @@ describe("Going to Write first test Using Page Object Model", () => {
         googleSearch.get();
         global.highlight(googleSearch.searchButton);
         global.readCurrentUrl();
-        googleSearch.searchBox.sendKeys('Dam');
+        googleSearch.searchBox.sendKeys('Feluda');
         global.writeScreenShot('reports/snaps/google.png');
         googleSearch.searchButton.click();
         global.readCurrentUrl();
-        //global.waitforPage('Dam');
+        global.waitforPage('Feluda');
 
     });
 });
