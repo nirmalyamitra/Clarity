@@ -38,22 +38,27 @@ var _this = this;
 exports.__esModule = true;
 var googleSearchPage_1 = require("./pages/googleSearchPage");
 var common_1 = require("./common/common");
-var console = require('winston');
+//var console = require('winston');
 describe("Going to Write first test Using Page Object Model", function () {
     var googleSearch = new googleSearchPage_1.googleSearchPage();
     var global = new common_1.common();
     it("Should navigate to Google Page and Search for Dam", function () { return __awaiter(_this, void 0, void 0, function () {
         return __generator(this, function (_a) {
-            console.log('info', 'Should navigate to Google Page and Search for Dam');
-            console.info('Going to Write first test Using Page Object Model');
+            //console.log('info', 'Should navigate to Google Page and Search for Dam');
+            //console.info('Going to Write first test Using Page Object Model');
             googleSearch.get();
             global.highlight(googleSearch.searchButton);
-            global.readCurrentUrl();
+            //global.readCurrentUrl();
             googleSearch.searchBox.sendKeys('Feluda');
-            global.writeScreenShot('reports/snaps/google.png');
+            //global.writeScreenShot('reports/snaps/google.png');
             googleSearch.searchButton.click();
-            global.readCurrentUrl();
+            //global.readCurrentUrl();
             global.waitforPage('Feluda');
+            return [2 /*return*/];
+        });
+    }); });
+    it("Should be an empty test case", function () { return __awaiter(_this, void 0, void 0, function () {
+        return __generator(this, function (_a) {
             return [2 /*return*/];
         });
     }); });
