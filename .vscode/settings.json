@@ -8,5 +8,6 @@
         "**/*.js":true,
         "**/*.js.map":true,
         "app.ts":true
-    }
+    },
+    "cucumber-gotostep.srcPath": "../step_definitions/*.ts"
 }

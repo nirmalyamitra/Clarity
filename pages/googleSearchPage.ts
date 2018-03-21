@@ -1,6 +1,5 @@
 import { browser, element, by, $$, $ } from 'protractor';
 import { idType, basePage } from './basePage';
-import {Network} from "chrome-debugging-client/dist/protocol/tot";
 
 const locators = {
     searchBox: {
