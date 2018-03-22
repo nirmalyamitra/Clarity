@@ -9,9 +9,9 @@ export let config: Config = {
     frameworkPath: require.resolve('protractor-cucumber-framework'),
 
     cucumberOpts: {
-        compiler: "",
+        compiler: "ts:ts-node/register",
         strict: true,
-        format: ['pretty'],
+        format: ['progress'],
         require: ['./step_definitions/*.js', './hooks/*.js'],
         tags: '@smoke'
     }

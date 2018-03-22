@@ -51,4 +51,9 @@ cucumber_1.Given(/^I navigate to Google Page$/, function () { return __awaiter(_
         }
     });
 }); });
+cucumber_1.Then(/^I search for 'Feluda'$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        return [2 /*return*/];
+    });
+}); });
 //# sourceMappingURL=googleSteps.js.map
