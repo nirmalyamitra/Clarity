@@ -7,9 +7,7 @@ import util = require('util');
 
 
 export let config: Config = {
-  framework: 'custom',
-  frameworkPath: require.resolve('protractor-cucumber-framework'),
-
+  framework: 'jasmine',
   capabilities: {
     browserName: 'chrome',
     /*'chromeOptions': {
@@ -59,16 +57,8 @@ export let config: Config = {
 
 
   },
-  specs: ['./features/*.feature'],
+  specs: ['./googleJasmin.js'],
   seleniumAddress: 'http://localhost:4444/wd/hub',
-
-  cucumberOpts: {
-    compiler: "ts:ts-node/register",
-    strict: true,
-    format: ['json:./reports/json/cucumber_report.json'],
-    require: ['./step_definitions/*.js', './hooks/*.js'],
-    tags: '@smoke'
-  },
 
   // You could set no globals to true to avoid jQuery '$' and protractor '$'
   // collisions on the global namespace.

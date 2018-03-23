@@ -1,0 +1,147 @@
+[
+  {
+    "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Feluda",
+    "keyword": "Feature",
+    "name": "To open Google Page and search for Feluda",
+    "line": 1,
+    "id": "to-open-google-page-and-search-for-feluda",
+    "tags": [],
+    "uri": "features/google.feature",
+    "elements": [
+      {
+        "id": "to-open-google-page-and-search-for-feluda;navigate-to-google-page-and-search-for-feluda",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Navigate to google page and search for Feluda",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to Google Page",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4551000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I search for Feluda",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I click on the search now button",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2996000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "I should see the listings of Feluda",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 615000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "to-open-google-page-and-search-for-feluda;navigate-to-google-page-and-search-for-dam",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "Navigate to google page and search for Dam",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 12
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I navigate to Google Page to search for Dam",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 778000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I search for Dam",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I click on the search now button to search for Dam",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2203000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "I should see the listings of Dam",
+            "match": {
+              "location": "step_definitions/googleSteps.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 668000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

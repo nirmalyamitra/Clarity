@@ -47,13 +47,102 @@ cucumber_1.Given(/^I navigate to Google Page$/, function () { return __awaiter(_
             case 0: return [4 /*yield*/, googleSearch.get()];
             case 1:
                 _a.sent();
+                return [4 /*yield*/, global.highlight(googleSearch.searchButton)];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 3:
+                _a.sent();
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I search for 'Feluda'$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I search for Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        return [2 /*return*/];
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Feluda')];
+            case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I click on the search now button$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
+            case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I should see the listings of Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, global.waitforPage('Feluda')];
+            case 1:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/google.png')];
+            case 3:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Given(/^I navigate to Google Page to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, googleSearch.get()];
+            case 1:
+                _a.sent();
+                return [4 /*yield*/, global.highlight(googleSearch.searchButton)];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 3:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Dam')];
+            case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I click on the search now button to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
+            case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I should see the listings of Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, global.waitforPage('Dam')];
+            case 1:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/googleDam.png')];
+            case 3:
+                _a.sent();
+                return [2 /*return*/];
+        }
     });
 }); });
 //# sourceMappingURL=googleSteps.js.map
