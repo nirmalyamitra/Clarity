@@ -41,7 +41,7 @@ var googleSearchPage_1 = require("../pages/googleSearchPage");
 var common_1 = require("../common/common");
 var googleSearch = new googleSearchPage_1.googleSearchPage();
 var global = new common_1.common();
-cucumber_1.Given(/^I navigate to Google Page$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Given(/^I navigate to Google Page to search for Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.get()];
@@ -67,7 +67,7 @@ cucumber_1.Then(/^I search for Feluda$/, function () { return __awaiter(_this, v
         }
     });
 }); });
-cucumber_1.Then(/^I click on the search now button$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I click on the Search Now button$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
@@ -119,7 +119,7 @@ cucumber_1.Then(/^I search for Dam$/, function () { return __awaiter(_this, void
         }
     });
 }); });
-cucumber_1.Then(/^I click on the search now button to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I click on the Search Now button to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];

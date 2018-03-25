@@ -1,6 +1,6 @@
 [
   {
-    "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Feluda",
+    "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Feluda and Dam",
     "keyword": "Feature",
     "name": "To open Google Page and search for Feluda",
     "line": 1,
@@ -25,13 +25,13 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 7,
-            "name": "I navigate to Google Page",
+            "name": "I navigate to Google Page to search for Feluda",
             "match": {
               "location": "step_definitions/googleSteps.ts:9"
             },
             "result": {
               "status": "passed",
-              "duration": 4551000000
+              "duration": 4060000000
             }
           },
           {
@@ -44,20 +44,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 78000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "I click on the search now button",
+            "name": "I click on the Search Now button",
             "match": {
               "location": "step_definitions/googleSteps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 2996000000
+              "duration": 1839000000
             }
           },
           {
@@ -70,7 +70,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 615000000
+              "duration": 689000000
             }
           }
         ]
@@ -98,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 763000000
             }
           },
           {
@@ -111,20 +111,20 @@
             },
             "result": {
               "status": "passed",
-              "duration": 46000000
+              "duration": 45000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "I click on the search now button to search for Dam",
+            "name": "I click on the Search Now button to search for Dam",
             "match": {
               "location": "step_definitions/googleSteps.ts:34"
             },
             "result": {
               "status": "passed",
-              "duration": 2203000000
+              "duration": 1584000000
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 668000000
+              "duration": 690000000
             }
           }
         ]
