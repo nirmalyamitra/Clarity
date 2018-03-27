@@ -3,6 +3,8 @@ import fs = require('fs');
 import path = require('path');
 import winston = require('winston');
 import util = require('util');
+import { cucumberReportExtn } from './reports/cucumberReportExtn';
+const jsonReports = process.cwd() + "/reports/json";
 
 
 
@@ -22,6 +24,7 @@ export let config: Config = {
   onPrepare: () => {
     browser.waitForAngularEnabled(false);
     browser.driver.fullscreen();
+    cucumberReportExtn.createReportFile(jsonReports);
 
     fs.truncate('reports/url.txt', 0, function () {
       console.log('done')
@@ -72,5 +75,9 @@ export let config: Config = {
 
   // You could set no globals to true to avoid jQuery '$' and protractor '$'
   // collisions on the global namespace.
-  noGlobals: true
+  noGlobals: true,
+
+  onComplete: () =>{
+    cucumberReportExtn.generateCucumberReport();
+  }
 };

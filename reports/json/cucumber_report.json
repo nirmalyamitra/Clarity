@@ -27,11 +27,11 @@
             "line": 7,
             "name": "I navigate to Google Page to search for Feluda",
             "match": {
-              "location": "step_definitions/googleSteps.ts:9"
+              "location": "step_definitions/googleSteps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 4060000000
+              "duration": 2595000000
             }
           },
           {
@@ -40,11 +40,11 @@
             "line": 8,
             "name": "I search for Feluda",
             "match": {
-              "location": "step_definitions/googleSteps.ts:14"
+              "location": "step_definitions/googleSteps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 78000000
+              "duration": 89000000
             }
           },
           {
@@ -53,11 +53,11 @@
             "line": 9,
             "name": "I click on the Search Now button",
             "match": {
-              "location": "step_definitions/googleSteps.ts:17"
+              "location": "step_definitions/googleSteps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 1839000000
+              "duration": 2239000000
             }
           },
           {
@@ -66,11 +66,11 @@
             "line": 10,
             "name": "I should see the listings of Feluda",
             "match": {
-              "location": "step_definitions/googleSteps.ts:20"
+              "location": "step_definitions/googleSteps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 689000000
+              "duration": 734000000
             }
           }
         ]
@@ -94,11 +94,11 @@
             "line": 14,
             "name": "I navigate to Google Page to search for Dam",
             "match": {
-              "location": "step_definitions/googleSteps.ts:26"
+              "location": "step_definitions/googleSteps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 763000000
+              "duration": 764000000
             }
           },
           {
@@ -107,7 +107,7 @@
             "line": 15,
             "name": "I search for Dam",
             "match": {
-              "location": "step_definitions/googleSteps.ts:31"
+              "location": "step_definitions/googleSteps.ts:32"
             },
             "result": {
               "status": "passed",
@@ -120,11 +120,11 @@
             "line": 16,
             "name": "I click on the Search Now button to search for Dam",
             "match": {
-              "location": "step_definitions/googleSteps.ts:34"
+              "location": "step_definitions/googleSteps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1584000000
+              "duration": 1447000000
             }
           },
           {
@@ -133,11 +133,11 @@
             "line": 17,
             "name": "I should see the listings of Dam",
             "match": {
-              "location": "step_definitions/googleSteps.ts:37"
+              "location": "step_definitions/googleSteps.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 690000000
+              "duration": 609000000
             }
           }
         ]

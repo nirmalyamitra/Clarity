@@ -2,6 +2,7 @@ import {Given, When, Then} from 'cucumber'
 import { googleSearchPage } from '../pages/googleSearchPage';
 import { common } from '../common/common';
 import { async } from 'q';
+import { browser } from 'protractor';
 
     let googleSearch = new googleSearchPage();
     let global = new common();

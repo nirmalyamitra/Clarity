@@ -3,6 +3,8 @@ exports.__esModule = true;
 var protractor_1 = require("protractor");
 var fs = require("fs");
 var winston = require("winston");
+var cucumberReportExtn_1 = require("./reports/cucumberReportExtn");
+var jsonReports = process.cwd() + "/reports/json";
 exports.config = {
     framework: 'custom',
     frameworkPath: require.resolve('protractor-cucumber-framework'),
@@ -12,6 +14,7 @@ exports.config = {
     onPrepare: function () {
         protractor_1.browser.waitForAngularEnabled(false);
         protractor_1.browser.driver.fullscreen();
+        cucumberReportExtn_1.cucumberReportExtn.createReportFile(jsonReports);
         fs.truncate('reports/url.txt', 0, function () {
             console.log('done');
         });
@@ -55,6 +58,9 @@ exports.config = {
     },
     // You could set no globals to true to avoid jQuery '$' and protractor '$'
     // collisions on the global namespace.
-    noGlobals: true
+    noGlobals: true,
+    onComplete: function () {
+        cucumberReportExtn_1.cucumberReportExtn.generateCucumberReport();
+    }
 };
 //# sourceMappingURL=conf.js.map
