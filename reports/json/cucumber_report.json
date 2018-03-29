@@ -31,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2595000000
+              "duration": 1541000000
             }
           },
           {
@@ -56,8 +56,9 @@
               "location": "step_definitions/googleSteps.ts:18"
             },
             "result": {
-              "status": "passed",
-              "duration": 2239000000
+              "status": "failed",
+              "duration": 5005000000,
+              "error_message": "Error: function timed out after 5000 milliseconds\n    at Timeout._onTimeout (/Users/nmitra/Documents/Clarity/node_modules/cucumber/src/user_code_runner.js:61:18)\n    at ontimeout (timers.js:475:11)\n    at tryOnTimeout (timers.js:310:5)\n    at Timer.listOnTimeout (timers.js:270:5)"
             }
           },
           {
@@ -69,8 +70,7 @@
               "location": "step_definitions/googleSteps.ts:21"
             },
             "result": {
-              "status": "passed",
-              "duration": 734000000
+              "status": "skipped"
             }
           }
         ]
@@ -98,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 764000000
+              "duration": 1597000000
             }
           },
           {
@@ -111,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 44000000
             }
           },
           {
@@ -124,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1447000000
+              "duration": 1815000000
             }
           },
           {
@@ -137,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 609000000
+              "duration": 825000000
             }
           }
         ]

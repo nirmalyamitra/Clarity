@@ -3,13 +3,13 @@ exports.__esModule = true;
 var fs = require("fs");
 var mkdirp_1 = require("mkdirp");
 var path = require("path");
-var console = require('winston');
+var winston = require('winston');
 var report = require('cucumber-html-reporter');
 var cucumber = require('cucumber');
-var jsonDir = path.join(process.cwd() + "/reports/json/");
-var htmlDir = path.join(process.cwd() + "/reports/html/");
-console.log('info', "jsonDir " + jsonDir);
-console.log('info', "htmlDir " + htmlDir);
+var jsonDir = path.join(process.cwd() + "/reports/json");
+var htmlDir = path.join(process.cwd() + "/reports/html");
+winston.info('jsonDir ' + jsonDir);
+winston.info('htmlDir ' + htmlDir);
 var jsonFile = jsonDir + "/cucumber_report.json";
 var cucumberReportOption = {
     theme: 'bootstrap',

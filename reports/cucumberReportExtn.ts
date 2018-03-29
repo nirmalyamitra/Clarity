@@ -3,15 +3,15 @@ import { mkdirp } from 'mkdirp';
 import * as report from 'cucumber-html-reporter';
 import * as path from 'path';
 
-var console = require('winston');
+var winston = require('winston');
 var report = require('cucumber-html-reporter');
 
 const cucumber = require('cucumber');
-const jsonDir = path.join(process.cwd() + "/reports/json/");
-const htmlDir = path.join(process.cwd() + "/reports/html/");
+const jsonDir = path.join(process.cwd() + "/reports/json");
+const htmlDir = path.join(process.cwd() + "/reports/html");
 
-console.log('info',"jsonDir "+jsonDir);
-console.log('info',"htmlDir "+htmlDir);
+winston.info('jsonDir '+jsonDir);
+winston.info('htmlDir '+htmlDir);
 
 const jsonFile = jsonDir + "/cucumber_report.json";
 
