@@ -1,12 +1,64 @@
 [
   {
+    "description": "Feature Description: This feature will open a browser and navigate to Facebook page",
+    "keyword": "Feature",
+    "name": "To open Facebook Page",
+    "line": 1,
+    "id": "to-open-facebook-page",
+    "tags": [],
+    "uri": "features/1facebook.feature",
+    "elements": [
+      {
+        "id": "to-open-facebook-page;navigate-to-facebook-page",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Navigate to Facebook page",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 5
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "I navigate to Facebook Page",
+            "match": {
+              "location": "step_definitions/facebook.steps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3059000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "I take the url and take a snap",
+            "match": {
+              "location": "step_definitions/facebook.steps.ts:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 633000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
     "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Feluda and Dam",
     "keyword": "Feature",
     "name": "To open Google Page and search for Feluda",
     "line": 1,
     "id": "to-open-google-page-and-search-for-feluda",
     "tags": [],
-    "uri": "features/google.feature",
+    "uri": "features/2google.feature",
     "elements": [
       {
         "id": "to-open-google-page-and-search-for-feluda;navigate-to-google-page-and-search-for-feluda",
@@ -27,11 +79,11 @@
             "line": 7,
             "name": "I navigate to Google Page to search for Feluda",
             "match": {
-              "location": "step_definitions/google.step.ts:10"
+              "location": "step_definitions/google.steps.ts:10"
             },
             "result": {
               "status": "passed",
-              "duration": 1494000000
+              "duration": 3624000000
             }
           },
           {
@@ -40,11 +92,11 @@
             "line": 8,
             "name": "I search for Feluda",
             "match": {
-              "location": "step_definitions/google.step.ts:15"
+              "location": "step_definitions/google.steps.ts:15"
             },
             "result": {
               "status": "passed",
-              "duration": 83000000
+              "duration": 75000000
             }
           },
           {
@@ -53,11 +105,11 @@
             "line": 9,
             "name": "I click on the Search Now button",
             "match": {
-              "location": "step_definitions/google.step.ts:18"
+              "location": "step_definitions/google.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 4400000000
+              "duration": 3008000000
             }
           },
           {
@@ -66,11 +118,11 @@
             "line": 10,
             "name": "I should see the listings of Feluda",
             "match": {
-              "location": "step_definitions/google.step.ts:21"
+              "location": "step_definitions/google.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 703000000
+              "duration": 378000000
             }
           }
         ]
@@ -94,11 +146,11 @@
             "line": 14,
             "name": "I navigate to Google Page to search for Dam",
             "match": {
-              "location": "step_definitions/google.step.ts:27"
+              "location": "step_definitions/google.steps.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 759000000
+              "duration": 720000000
             }
           },
           {
@@ -107,11 +159,11 @@
             "line": 15,
             "name": "I search for Dam",
             "match": {
-              "location": "step_definitions/google.step.ts:32"
+              "location": "step_definitions/google.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 45000000
+              "duration": 48000000
             }
           },
           {
@@ -120,11 +172,11 @@
             "line": 16,
             "name": "I click on the Search Now button to search for Dam",
             "match": {
-              "location": "step_definitions/google.step.ts:35"
+              "location": "step_definitions/google.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 1601000000
+              "duration": 1200000000
             }
           },
           {
@@ -133,11 +185,11 @@
             "line": 17,
             "name": "I should see the listings of Dam",
             "match": {
-              "location": "step_definitions/google.step.ts:38"
+              "location": "step_definitions/google.steps.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 585000000
+              "duration": 355000000
             }
           }
         ]
