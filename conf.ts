@@ -23,6 +23,7 @@ export let config: Config = {
   },
   onPrepare: () => {
     browser.waitForAngularEnabled(false);
+    //allScriptsTimeout: 1000000;
     browser.driver.fullscreen();
     cucumberReportExtn.createReportFile(jsonReports);
 
@@ -64,6 +65,10 @@ export let config: Config = {
   },
   specs: ['./features/*.feature'],
   seleniumAddress: 'http://localhost:4444/wd/hub',
+
+  suites:[
+
+  ],
 
   cucumberOpts: {
     compiler: "ts:ts-node/register",

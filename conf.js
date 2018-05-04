@@ -13,6 +13,7 @@ exports.config = {
     },
     onPrepare: function () {
         protractor_1.browser.waitForAngularEnabled(false);
+        //allScriptsTimeout: 1000000;
         protractor_1.browser.driver.fullscreen();
         cucumberReportExtn_1.cucumberReportExtn.createReportFile(jsonReports);
         fs.truncate('reports/url.txt', 0, function () {
@@ -49,6 +50,7 @@ exports.config = {
     },
     specs: ['./features/*.feature'],
     seleniumAddress: 'http://localhost:4444/wd/hub',
+    suites: [],
     cucumberOpts: {
         compiler: "ts:ts-node/register",
         strict: true,
