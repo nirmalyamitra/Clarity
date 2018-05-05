@@ -10,13 +10,13 @@ BeforeAll(async() => {
 
 });
 
-After('Step Result', async (Scenario) => {
-    console.log('After every Feature');
-    if(Scenario.result.status == Status.FAILED) {
-        const screenShot = await browser.takeScreenshot();
-        this.attach(screenShot, "image/png");
-    }
-});
+// After('Step Result', async (Scenario) => {
+//     console.log('After every Feature');
+//     if(Scenario.result.status == Status.FAILED) {
+//         const screenShot = await browser.takeScreenshot();
+//         this.attach(screenShot, "image/png");
+//     }
+// });
 
 AfterAll(async() =>{
     console.log('exiting the application');

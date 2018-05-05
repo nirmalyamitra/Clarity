@@ -37,7 +37,6 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 exports.__esModule = true;
 var cucumber_1 = require("cucumber");
-var protractor_1 = require("protractor");
 cucumber_1.setDefaultTimeout(120000);
 cucumber_1.BeforeAll(function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
@@ -45,22 +44,13 @@ cucumber_1.BeforeAll(function () { return __awaiter(_this, void 0, void 0, funct
         return [2 /*return*/];
     });
 }); });
-cucumber_1.After('Step Result', function (Scenario) { return __awaiter(_this, void 0, void 0, function () {
-    var screenShot;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                console.log('After every Feature');
-                if (!(Scenario.result.status == cucumber_1.Status.FAILED)) return [3 /*break*/, 2];
-                return [4 /*yield*/, protractor_1.browser.takeScreenshot()];
-            case 1:
-                screenShot = _a.sent();
-                this.attach(screenShot, "image/png");
-                _a.label = 2;
-            case 2: return [2 /*return*/];
-        }
-    });
-}); });
+// After('Step Result', async (Scenario) => {
+//     console.log('After every Feature');
+//     if(Scenario.result.status == Status.FAILED) {
+//         const screenShot = await browser.takeScreenshot();
+//         this.attach(screenShot, "image/png");
+//     }
+// });
 cucumber_1.AfterAll(function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         console.log('exiting the application');
