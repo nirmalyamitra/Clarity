@@ -36,7 +36,7 @@ import { browser } from 'protractor';
         await googleSearch.searchButton.click();
     });
     Then(/^I should see the listings of Dam$/, async () => {
-        await global.waitforPage('Dam');
+        await global.waitforPage('Damssss');
         await global.readCurrentUrl();
         await global.writeScreenShot('reports/snaps/googleDam.png');
     });
