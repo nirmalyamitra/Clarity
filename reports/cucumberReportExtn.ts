@@ -21,6 +21,7 @@ const cucumberReportOption = {
     output: htmlDir + "/cucumber_report.html",
     reportSuiteAsScenarios: true,
     launchReport: true,
+    brandTitle: 'Sanity Report',
     metadata: {
         "App Version": "0.1.1",
         "Test Environment": "TESTING",
