@@ -19,7 +19,7 @@ import { browser } from 'protractor';
         await googleSearch.searchButton.click();
     });
     Then(/^I should see the listings of Feluda$/, async () => {
-        await global.waitforPage('Feluda');
+        await global.waitforPage('Feludasss');
         await global.readCurrentUrl();
         await global.writeScreenShot('reports/snaps/google.png');
     });
@@ -36,7 +36,7 @@ import { browser } from 'protractor';
         await googleSearch.searchButton.click();
     });
     Then(/^I should see the listings of Dam$/, async () => {
-        await global.waitforPage('Damssss');
+        await global.waitforPage('Dam');
         await global.readCurrentUrl();
         await global.writeScreenShot('reports/snaps/googleDam.png');
     });
