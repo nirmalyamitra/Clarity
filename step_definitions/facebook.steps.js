@@ -37,13 +37,14 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 var _this = this;
 exports.__esModule = true;
 var cucumber_1 = require("cucumber");
+var facebookLoginPage_1 = require("../pages/facebookLoginPage");
 var common_1 = require("../common/common");
-var protractor_1 = require("protractor");
 var global = new common_1.common();
+var facebookLogin = new facebookLoginPage_1.facebookLoginPage();
 cucumber_1.Given(/^I navigate to Facebook Page$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, protractor_1.browser.get("https://www.facebook.com")];
+            case 0: return [4 /*yield*/, facebookLogin.get()];
             case 1:
                 _a.sent();
                 return [2 /*return*/];
@@ -56,8 +57,43 @@ cucumber_1.Then(/^I take the url and take a snap$/, function () { return __await
             case 0: return [4 /*yield*/, global.readCurrentUrl()];
             case 1:
                 _a.sent();
-                return [4 /*yield*/, global.writeScreenShot('reports/snaps/facebook.png')];
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/facebookLoginPage.png')];
             case 2:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I populate 'Email' and 'Password'$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, facebookLogin.emailIdBox.sendKeys('EmailId')];
+            case 1:
+                _a.sent();
+                return [4 /*yield*/, facebookLogin.passwordBox.sendKeys('password')];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 3:
+                _a.sent();
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/fbEmailPasswrd.png')];
+            case 4:
+                _a.sent();
+                return [2 /*return*/];
+        }
+    });
+}); });
+cucumber_1.Then(/^I click on 'Log In' button$/, function () { return __awaiter(_this, void 0, void 0, function () {
+    return __generator(this, function (_a) {
+        switch (_a.label) {
+            case 0: return [4 /*yield*/, facebookLogin.loginButton.click()];
+            case 1:
+                _a.sent();
+                return [4 /*yield*/, global.readCurrentUrl()];
+            case 2:
+                _a.sent();
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/fbWrongPasswrd.png')];
+            case 3:
                 _a.sent();
                 return [2 /*return*/];
         }
