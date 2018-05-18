@@ -27,11 +27,11 @@
             "line": 7,
             "name": "I navigate to Facebook Page",
             "match": {
-              "location": "step_definitions/facebook.steps.ts:11"
+              "location": "step_definitions/facebook.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 3854000000
+              "duration": 8591000000
             }
           },
           {
@@ -40,11 +40,11 @@
             "line": 8,
             "name": "I take the url and take a snap",
             "match": {
-              "location": "step_definitions/facebook.steps.ts:14"
+              "location": "step_definitions/facebook.steps.ts:16"
             },
             "result": {
               "status": "passed",
-              "duration": 657000000
+              "duration": 656000000
             }
           },
           {
@@ -53,11 +53,11 @@
             "line": 9,
             "name": "I populate 'Email' and 'Password'",
             "match": {
-              "location": "step_definitions/facebook.steps.ts:18"
+              "location": "step_definitions/facebook.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 644000000
+              "duration": 667000000
             }
           },
           {
@@ -66,11 +66,11 @@
             "line": 10,
             "name": "I click on 'Log In' button",
             "match": {
-              "location": "step_definitions/facebook.steps.ts:24"
+              "location": "step_definitions/facebook.steps.ts:28"
             },
             "result": {
               "status": "passed",
-              "duration": 3406000000
+              "duration": 3770000000
             }
           },
           {
@@ -80,7 +80,8 @@
               "location": "hooks/scenarioHook.ts:13"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -115,11 +116,11 @@
             "line": 7,
             "name": "I navigate to Google Page to search for Feluda",
             "match": {
-              "location": "step_definitions/google.steps.ts:10"
+              "location": "step_definitions/google.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 2299000000
+              "duration": 4984000000
             }
           },
           {
@@ -128,11 +129,11 @@
             "line": 8,
             "name": "I search for Feluda",
             "match": {
-              "location": "step_definitions/google.steps.ts:15"
+              "location": "step_definitions/google.steps.ts:17"
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 59000000
             }
           },
           {
@@ -141,11 +142,11 @@
             "line": 9,
             "name": "I click on the Search Now button",
             "match": {
-              "location": "step_definitions/google.steps.ts:18"
+              "location": "step_definitions/google.steps.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 2785000000
+              "duration": 3698000000
             }
           },
           {
@@ -154,11 +155,11 @@
             "line": 10,
             "name": "I should see the listings of Feluda",
             "match": {
-              "location": "step_definitions/google.steps.ts:21"
+              "location": "step_definitions/google.steps.ts:25"
             },
             "result": {
               "status": "passed",
-              "duration": 653000000
+              "duration": 654000000
             }
           },
           {
@@ -169,7 +170,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 25000000
             }
           }
         ]
@@ -193,11 +194,11 @@
             "line": 14,
             "name": "I navigate to Google Page to search for Dam",
             "match": {
-              "location": "step_definitions/google.steps.ts:27"
+              "location": "step_definitions/google.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 676000000
+              "duration": 2167000000
             }
           },
           {
@@ -206,11 +207,11 @@
             "line": 15,
             "name": "I search for Dam",
             "match": {
-              "location": "step_definitions/google.steps.ts:32"
+              "location": "step_definitions/google.steps.ts:38"
             },
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 44000000
             }
           },
           {
@@ -219,11 +220,11 @@
             "line": 16,
             "name": "I click on the Search Now button to search for Dam",
             "match": {
-              "location": "step_definitions/google.steps.ts:35"
+              "location": "step_definitions/google.steps.ts:42"
             },
             "result": {
               "status": "passed",
-              "duration": 2543000000
+              "duration": 7146000000
             }
           },
           {
@@ -232,11 +233,11 @@
             "line": 17,
             "name": "I should see the listings of Dam",
             "match": {
-              "location": "step_definitions/google.steps.ts:38"
+              "location": "step_definitions/google.steps.ts:46"
             },
             "result": {
               "status": "passed",
-              "duration": 635000000
+              "duration": 644000000
             }
           },
           {
@@ -246,7 +247,8 @@
               "location": "hooks/scenarioHook.ts:13"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]

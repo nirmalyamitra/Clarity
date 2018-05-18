@@ -39,6 +39,7 @@ exports.__esModule = true;
 var cucumber_1 = require("cucumber");
 var googleSearchPage_1 = require("../pages/googleSearchPage");
 var common_1 = require("../common/common");
+var console = require('winston');
 var googleSearch = new googleSearchPage_1.googleSearchPage();
 var global = new common_1.common();
 cucumber_1.Given(/^I navigate to Google Page to search for Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
@@ -53,6 +54,7 @@ cucumber_1.Given(/^I navigate to Google Page to search for Feluda$/, function ()
                 return [4 /*yield*/, global.readCurrentUrl()];
             case 3:
                 _a.sent();
+                console.info('I navigate to Google Page to search for Feluda');
                 return [2 /*return*/];
         }
     });
@@ -63,6 +65,7 @@ cucumber_1.Then(/^I search for Feluda$/, function () { return __awaiter(_this, v
             case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Feluda')];
             case 1:
                 _a.sent();
+                console.info('I search for Feluda');
                 return [2 /*return*/];
         }
     });
@@ -73,6 +76,7 @@ cucumber_1.Then(/^I click on the Search Now button$/, function () { return __awa
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
             case 1:
                 _a.sent();
+                console.info('I click on the Search Now button');
                 return [2 /*return*/];
         }
     });
@@ -89,6 +93,7 @@ cucumber_1.Then(/^I should see the listings of Feluda$/, function () { return __
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/google.png')];
             case 3:
                 _a.sent();
+                console.info('I should see the listings of Feluda');
                 return [2 /*return*/];
         }
     });
@@ -105,6 +110,7 @@ cucumber_1.Given(/^I navigate to Google Page to search for Dam$/, function () { 
                 return [4 /*yield*/, global.readCurrentUrl()];
             case 3:
                 _a.sent();
+                console.info('I navigate to Google Page to search for Dam');
                 return [2 /*return*/];
         }
     });
@@ -115,6 +121,7 @@ cucumber_1.Then(/^I search for Dam$/, function () { return __awaiter(_this, void
             case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Dam')];
             case 1:
                 _a.sent();
+                console.info('I search for Dam');
                 return [2 /*return*/];
         }
     });
@@ -125,6 +132,7 @@ cucumber_1.Then(/^I click on the Search Now button to search for Dam$/, function
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
             case 1:
                 _a.sent();
+                console.info('I click on the Search Now button to search for Dam');
                 return [2 /*return*/];
         }
     });
@@ -141,6 +149,7 @@ cucumber_1.Then(/^I should see the listings of Dam$/, function () { return __awa
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/googleDam.png')];
             case 3:
                 _a.sent();
+                console.info('I should see the listings of Dam');
                 return [2 /*return*/];
         }
     });

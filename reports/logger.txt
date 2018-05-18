@@ -1,2 +1,12 @@
-{"level":"info","message":"Should navigate to Google Page and Search for Dam","timestamp":"2018-03-27T07:52:28.115Z"}
-{"level":"info","message":"Going to Write first test Using Page Object Model","timestamp":"2018-03-27T07:52:28.115Z"}
+{"level":"info","message":"I navigate to Facebook Page","timestamp":"2018-05-18T16:23:07.051Z"}
+{"level":"info","message":"I take the url and take a snap","timestamp":"2018-05-18T16:23:07.708Z"}
+{"level":"info","message":"I populate Email and Password","timestamp":"2018-05-18T16:23:08.376Z"}
+{"level":"info","message":"I click on Log In button","timestamp":"2018-05-18T16:23:12.146Z"}
+{"level":"info","message":"I navigate to Google Page to search for Feluda","timestamp":"2018-05-18T16:23:17.133Z"}
+{"level":"info","message":"I search for Feluda","timestamp":"2018-05-18T16:23:17.193Z"}
+{"level":"info","message":"I click on the Search Now button","timestamp":"2018-05-18T16:23:20.892Z"}
+{"level":"info","message":"I should see the listings of Feluda","timestamp":"2018-05-18T16:23:21.547Z"}
+{"level":"info","message":"I navigate to Google Page to search for Dam","timestamp":"2018-05-18T16:23:23.743Z"}
+{"level":"info","message":"I search for Dam","timestamp":"2018-05-18T16:23:23.787Z"}
+{"level":"info","message":"I click on the Search Now button to search for Dam","timestamp":"2018-05-18T16:23:30.934Z"}
+{"level":"info","message":"I should see the listings of Dam","timestamp":"2018-05-18T16:23:31.579Z"}
