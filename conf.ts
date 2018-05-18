@@ -37,6 +37,10 @@ export let config: Config = {
       ]
     });
 
+    fs.truncate('reports/logger.txt', 0, function () {
+      console.log('done')
+    });
+
     /*afterEach(() => {
       var logs = browser.driver.manage().logs(),
         logType = 'browser'; // browser

@@ -24,6 +24,9 @@ exports.config = {
                 new (winston.transports.File)({ filename: 'reports/logger.txt' })
             ]
         });
+        fs.truncate('reports/logger.txt', 0, function () {
+            console.log('done');
+        });
         /*afterEach(() => {
           var logs = browser.driver.manage().logs(),
             logType = 'browser'; // browser
