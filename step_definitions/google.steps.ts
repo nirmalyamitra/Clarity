@@ -19,7 +19,7 @@ import { browser } from 'protractor';
         await googleSearch.searchButton.click();
     });
     Then(/^I should see the listings of Feluda$/, async () => {
-        await global.waitforPage('Feludasss');
+        await global.waitforPage('Feluda');
         await global.readCurrentUrl();
         await global.writeScreenShot('reports/snaps/google.png');
     });

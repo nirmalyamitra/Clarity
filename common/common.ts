@@ -40,12 +40,10 @@ export class common {
         await browser.getCurrentUrl().then(function(url) {
             var t = date.toTimeString();
             var time = t.slice(0,9)
-            fs.appendFile('reports/url.txt',time+" ", function (err) {
+            var text = time + "  " + url
+            fs.appendFile('reports/url.txt',text+"\n", function (err) {
                 if (err) throw err;
             });
-            fs.appendFile('reports/url.txt',url +"\n", function (err) {
-                if (err) throw err;
-              });
           });
     }
 

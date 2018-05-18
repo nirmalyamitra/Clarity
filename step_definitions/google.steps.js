@@ -80,7 +80,7 @@ cucumber_1.Then(/^I click on the Search Now button$/, function () { return __awa
 cucumber_1.Then(/^I should see the listings of Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, global.waitforPage('Feludasss')];
+            case 0: return [4 /*yield*/, global.waitforPage('Feluda')];
             case 1:
                 _a.sent();
                 return [4 /*yield*/, global.readCurrentUrl()];
