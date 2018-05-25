@@ -38,11 +38,24 @@ var _this = this;
 exports.__esModule = true;
 var cucumber_1 = require("cucumber");
 var protractor_1 = require("protractor");
+var json = require("load-json-file");
+var winston = require('winston');
+exports.dataFile = { 'Value': '1234' };
 cucumber_1.setDefaultTimeout(120000);
 cucumber_1.BeforeAll(function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
-        console.log('Starting the application');
-        return [2 /*return*/];
+        switch (_a.label) {
+            case 0:
+                console.log('Starting the application');
+                return [4 /*yield*/, json("./step_definitions/dataFile.json").then(function (data) {
+                        console.log(data);
+                        exports.dataFile.Value = data;
+                        winston.info(data);
+                    })];
+            case 1:
+                _a.sent();
+                return [2 /*return*/];
+        }
     });
 }); });
 cucumber_1.After(function (Scenario) {

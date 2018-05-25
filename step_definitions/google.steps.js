@@ -39,52 +39,55 @@ exports.__esModule = true;
 var cucumber_1 = require("cucumber");
 var googleSearchPage_1 = require("../pages/googleSearchPage");
 var common_1 = require("../common/common");
-var console = require('winston');
+var scenarioHook_1 = require("../hooks/scenarioHook");
+var winston = require('winston');
 var googleSearch = new googleSearchPage_1.googleSearchPage();
 var global = new common_1.common();
-cucumber_1.Given(/^I navigate to Google Page to search for Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Given(/^I navigate to Google Page to search for Value1$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, googleSearch.get()];
-            case 1:
-                _a.sent();
+            case 0:
+                googleSearch.get();
                 return [4 /*yield*/, global.highlight(googleSearch.searchButton)];
-            case 2:
+            case 1:
                 _a.sent();
                 return [4 /*yield*/, global.readCurrentUrl()];
-            case 3:
+            case 2:
                 _a.sent();
-                console.info('I navigate to Google Page to search for Feluda');
+                winston.info('I navigate to Google Page to search for ' + scenarioHook_1.dataFile.Value.searchValue1);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I search for Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I search for Value1$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Feluda')];
+            case 0:
+                //await googleSearch.searchBox.sendKeys('Feluda');
+                winston.info('Search Value1 Value : ', scenarioHook_1.dataFile.Value.searchValue1);
+                return [4 /*yield*/, googleSearch.searchBox.sendKeys(scenarioHook_1.dataFile.Value.searchValue1)];
             case 1:
                 _a.sent();
-                console.info('I search for Feluda');
+                winston.info('I search for ' + scenarioHook_1.dataFile.Value.searchValue1);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I click on the Search Now button$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I click on the 'Search Now' button$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
             case 1:
                 _a.sent();
-                console.info('I click on the Search Now button');
+                winston.info('I click on the Search Now button');
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I should see the listings of Feluda$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I should see the listings of Value1$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, global.waitforPage('Feluda')];
+            case 0: return [4 /*yield*/, global.waitforPage(scenarioHook_1.dataFile.Value.searchValue1)];
             case 1:
                 _a.sent();
                 return [4 /*yield*/, global.readCurrentUrl()];
@@ -93,12 +96,12 @@ cucumber_1.Then(/^I should see the listings of Feluda$/, function () { return __
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/google.png')];
             case 3:
                 _a.sent();
-                console.info('I should see the listings of Feluda');
+                winston.info('I should see the listings of ' + scenarioHook_1.dataFile.Value.searchValue1);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Given(/^I navigate to Google Page to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Given(/^I navigate to Google Page to search for Value2$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.get()];
@@ -110,37 +113,40 @@ cucumber_1.Given(/^I navigate to Google Page to search for Dam$/, function () { 
                 return [4 /*yield*/, global.readCurrentUrl()];
             case 3:
                 _a.sent();
-                console.info('I navigate to Google Page to search for Dam');
+                winston.info('I navigate to Google Page to search for ' + scenarioHook_1.dataFile.Value.searchValue2);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I search for Value2$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, googleSearch.searchBox.sendKeys('Dam')];
+            case 0:
+                //await googleSearch.searchBox.sendKeys('Dam');
+                winston.info('Search Value2 Value : ', scenarioHook_1.dataFile.Value.searchValue2);
+                return [4 /*yield*/, googleSearch.searchBox.sendKeys(scenarioHook_1.dataFile.Value.searchValue2)];
             case 1:
                 _a.sent();
-                console.info('I search for Dam');
+                winston.info('I search for ' + scenarioHook_1.dataFile.Value.searchValue2);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I click on the Search Now button to search for Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I click on the 'Search Now' button to search for Value2$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
             case 0: return [4 /*yield*/, googleSearch.searchButton.click()];
             case 1:
                 _a.sent();
-                console.info('I click on the Search Now button to search for Dam');
+                winston.info('I click on the Search Now button to search for ' + scenarioHook_1.dataFile.Value.searchValue2);
                 return [2 /*return*/];
         }
     });
 }); });
-cucumber_1.Then(/^I should see the listings of Dam$/, function () { return __awaiter(_this, void 0, void 0, function () {
+cucumber_1.Then(/^I should see the listings of Value2$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, global.waitforPage('Dam')];
+            case 0: return [4 /*yield*/, global.waitforPage(scenarioHook_1.dataFile.Value.searchValue2)];
             case 1:
                 _a.sent();
                 return [4 /*yield*/, global.readCurrentUrl()];
@@ -149,7 +155,7 @@ cucumber_1.Then(/^I should see the listings of Dam$/, function () { return __awa
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/googleDam.png')];
             case 3:
                 _a.sent();
-                console.info('I should see the listings of Dam');
+                winston.info('I should see the listings of ' + scenarioHook_1.dataFile.Value.searchValue2);
                 return [2 /*return*/];
         }
     });

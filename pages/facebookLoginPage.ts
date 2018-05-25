@@ -1,18 +1,19 @@
 import { browser, element, by, $$, $ } from 'protractor';
 import { idType, basePage } from './basePage';
+var winston = require('winston');
 
 const locators = {
     emailIdBox: {
         type: idType[idType.id],
-        value: "email"  
+        value: "email"
     },
-    
+
     passwordBox: {
         type: idType[idType.id],
         value: "pass"
     },
 
-    loginButton :{
+    loginButton: {
         type: idType[idType.className],
         value: "uiButton uiButtonConfirm"
     }

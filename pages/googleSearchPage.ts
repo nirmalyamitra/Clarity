@@ -1,5 +1,6 @@
 import { browser, element, by, $$, $ } from 'protractor';
 import { idType, basePage } from './basePage';
+var winston = require('winston');
 
 const locators = {
     searchBox: {
@@ -24,6 +25,4 @@ export class googleSearchPage extends basePage {
     async get() {
         await browser.get("http://www.google.co.in");
     }
-
-
 }

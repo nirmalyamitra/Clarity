@@ -39,7 +39,8 @@ exports.__esModule = true;
 var cucumber_1 = require("cucumber");
 var facebookLoginPage_1 = require("../pages/facebookLoginPage");
 var common_1 = require("../common/common");
-var console = require('winston');
+var scenarioHook_1 = require("../hooks/scenarioHook");
+var winston = require('winston');
 var global = new common_1.common();
 var facebookLogin = new facebookLoginPage_1.facebookLoginPage();
 cucumber_1.Given(/^I navigate to Facebook Page$/, function () { return __awaiter(_this, void 0, void 0, function () {
@@ -48,7 +49,7 @@ cucumber_1.Given(/^I navigate to Facebook Page$/, function () { return __awaiter
             case 0: return [4 /*yield*/, facebookLogin.get()];
             case 1:
                 _a.sent();
-                console.info('I navigate to Facebook Page');
+                winston.info('I navigate to Facebook Page');
                 return [2 /*return*/];
         }
     });
@@ -62,7 +63,7 @@ cucumber_1.Then(/^I take the url and take a snap$/, function () { return __await
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/facebookLoginPage.png')];
             case 2:
                 _a.sent();
-                console.info('I take the url and take a snap');
+                winston.info('I take the url and take a snap');
                 return [2 /*return*/];
         }
     });
@@ -70,19 +71,26 @@ cucumber_1.Then(/^I take the url and take a snap$/, function () { return __await
 cucumber_1.Then(/^I populate 'Email' and 'Password'$/, function () { return __awaiter(_this, void 0, void 0, function () {
     return __generator(this, function (_a) {
         switch (_a.label) {
-            case 0: return [4 /*yield*/, facebookLogin.emailIdBox.sendKeys('EmailId')];
+            case 0:
+                winston.info('I populate Email and Password');
+                winston.info('Data File : ', scenarioHook_1.dataFile);
+                winston.info('Email Id Value : ', scenarioHook_1.dataFile.Value.emailId);
+                winston.info('Password Value : ', scenarioHook_1.dataFile.Value.password);
+                return [4 /*yield*/, facebookLogin.emailIdBox.sendKeys(scenarioHook_1.dataFile.Value.emailId)];
             case 1:
                 _a.sent();
-                return [4 /*yield*/, facebookLogin.passwordBox.sendKeys('password')];
+                return [4 /*yield*/, facebookLogin.passwordBox.sendKeys(scenarioHook_1.dataFile.Value.password)];
             case 2:
                 _a.sent();
-                return [4 /*yield*/, global.readCurrentUrl()];
+                return [4 /*yield*/, facebookLogin.passwordBox.sendKeys('password')];
             case 3:
                 _a.sent();
-                return [4 /*yield*/, global.writeScreenShot('reports/snaps/fbEmailPasswrd.png')];
+                return [4 /*yield*/, global.readCurrentUrl()];
             case 4:
                 _a.sent();
-                console.info('I populate Email and Password');
+                return [4 /*yield*/, global.writeScreenShot('reports/snaps/fbEmailPasswrd.png')];
+            case 5:
+                _a.sent();
                 return [2 /*return*/];
         }
     });
@@ -99,7 +107,7 @@ cucumber_1.Then(/^I click on 'Log In' button$/, function () { return __awaiter(_
                 return [4 /*yield*/, global.writeScreenShot('reports/snaps/fbWrongPasswrd.png')];
             case 3:
                 _a.sent();
-                console.info('I click on Log In button');
+                winston.info('I click on Log In button');
                 return [2 /*return*/];
         }
     });

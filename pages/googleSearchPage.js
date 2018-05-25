@@ -47,6 +47,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
 exports.__esModule = true;
 var protractor_1 = require("protractor");
 var basePage_1 = require("./basePage");
+var winston = require('winston');
 var locators = {
     searchBox: {
         type: basePage_1.idType[basePage_1.idType.name],

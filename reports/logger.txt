@@ -1,12 +1,18 @@
-{"level":"info","message":"I navigate to Facebook Page","timestamp":"2018-05-18T16:37:09.526Z"}
-{"level":"info","message":"I take the url and take a snap","timestamp":"2018-05-18T16:37:10.382Z"}
-{"level":"info","message":"I populate Email and Password","timestamp":"2018-05-18T16:37:11.289Z"}
-{"level":"info","message":"I click on Log In button","timestamp":"2018-05-18T16:37:13.926Z"}
-{"level":"info","message":"I navigate to Google Page to search for Feluda","timestamp":"2018-05-18T16:37:16.364Z"}
-{"level":"info","message":"I search for Feluda","timestamp":"2018-05-18T16:37:16.434Z"}
-{"level":"info","message":"I click on the Search Now button","timestamp":"2018-05-18T16:37:20.259Z"}
-{"level":"info","message":"I should see the listings of Feluda","timestamp":"2018-05-18T16:37:20.923Z"}
-{"level":"info","message":"I navigate to Google Page to search for Dam","timestamp":"2018-05-18T16:37:22.091Z"}
-{"level":"info","message":"I search for Dam","timestamp":"2018-05-18T16:37:22.140Z"}
-{"level":"info","message":"I click on the Search Now button to search for Dam","timestamp":"2018-05-18T16:37:25.254Z"}
-{"level":"info","message":"I should see the listings of Dam","timestamp":"2018-05-18T16:37:25.887Z"}
+{"searchValue1":"Selenium","searchValue2":"Protractor","emailId":"nirmalya","password":"password","level":"info","message":"","timestamp":"2018-05-25T17:14:12.277Z"}
+{"level":"info","message":"I navigate to Facebook Page","timestamp":"2018-05-25T17:14:16.761Z"}
+{"level":"info","message":"I take the url and take a snap","timestamp":"2018-05-25T17:14:17.788Z"}
+{"level":"info","message":"I populate Email and Password","timestamp":"2018-05-25T17:14:17.789Z"}
+{"Value":{"searchValue1":"Selenium","searchValue2":"Protractor","emailId":"nirmalya","password":"password"},"level":"info","message":"Data File : ","timestamp":"2018-05-25T17:14:17.789Z"}
+{"level":"info","message":"Email Id Value :  nirmalya","timestamp":"2018-05-25T17:14:17.790Z"}
+{"level":"info","message":"Password Value :  password","timestamp":"2018-05-25T17:14:17.790Z"}
+{"level":"info","message":"I click on Log In button","timestamp":"2018-05-25T17:14:21.467Z"}
+{"level":"info","message":"I navigate to Google Page to search for Selenium","timestamp":"2018-05-25T17:14:25.775Z"}
+{"level":"info","message":"Search Value1 Value :  Selenium","timestamp":"2018-05-25T17:14:25.776Z"}
+{"level":"info","message":"I search for Selenium","timestamp":"2018-05-25T17:14:25.848Z"}
+{"level":"info","message":"I click on the Search Now button","timestamp":"2018-05-25T17:14:28.885Z"}
+{"level":"info","message":"I should see the listings of Selenium","timestamp":"2018-05-25T17:14:29.326Z"}
+{"level":"info","message":"I navigate to Google Page to search for Protractor","timestamp":"2018-05-25T17:14:30.207Z"}
+{"level":"info","message":"Search Value2 Value :  Protractor","timestamp":"2018-05-25T17:14:30.208Z"}
+{"level":"info","message":"I search for Protractor","timestamp":"2018-05-25T17:14:30.275Z"}
+{"level":"info","message":"I click on the Search Now button to search for Protractor","timestamp":"2018-05-25T17:14:32.357Z"}
+{"level":"info","message":"I should see the listings of Protractor","timestamp":"2018-05-25T17:14:32.748Z"}

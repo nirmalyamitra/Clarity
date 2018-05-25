@@ -31,7 +31,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5676000000
+              "duration": 4473000000
             }
           },
           {
@@ -44,7 +44,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 854000000
+              "duration": 1025000000
             }
           },
           {
@@ -57,7 +57,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 906000000
+              "duration": 737000000
             }
           },
           {
@@ -66,18 +66,18 @@
             "line": 10,
             "name": "I click on 'Log In' button",
             "match": {
-              "location": "step_definitions/facebook.steps.ts:28"
+              "location": "step_definitions/facebook.steps.ts:32"
             },
             "result": {
               "status": "passed",
-              "duration": 2636000000
+              "duration": 2940000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/scenarioHook.ts:13"
+              "location": "hooks/scenarioHook.ts:21"
             },
             "result": {
               "status": "passed"
@@ -88,23 +88,23 @@
     ]
   },
   {
-    "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Feluda and Dam",
+    "description": "Feature Description: This feature will open a browser and navigate to Google search page and search for Value1 and Value2",
     "keyword": "Feature",
-    "name": "To open Google Page and search for Feluda",
+    "name": "To open Google Page and search for Values",
     "line": 1,
-    "id": "to-open-google-page-and-search-for-feluda",
+    "id": "to-open-google-page-and-search-for-values",
     "tags": [],
     "uri": "features/2google.feature",
     "elements": [
       {
-        "id": "to-open-google-page-and-search-for-feluda;navigate-to-google-page-and-search-for-feluda",
+        "id": "to-open-google-page-and-search-for-values;navigate-to-google-page-and-search-for-value1",
         "keyword": "Scenario",
-        "line": 6,
-        "name": "Navigate to google page and search for Feluda",
+        "line": 7,
+        "name": "Navigate to google page and search for Value1",
         "tags": [
           {
             "name": "@smoke",
-            "line": 5
+            "line": 6
           }
         ],
         "type": "scenario",
@@ -112,77 +112,77 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 7,
-            "name": "I navigate to Google Page to search for Feluda",
-            "match": {
-              "location": "step_definitions/google.steps.ts:11"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 2436000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 8,
-            "name": "I search for Feluda",
+            "name": "I navigate to Google Page to search for Value1",
             "match": {
-              "location": "step_definitions/google.steps.ts:17"
+              "location": "step_definitions/google.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 70000000
+              "duration": 4304000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 9,
-            "name": "I click on the Search Now button",
+            "name": "I search for Value1",
             "match": {
-              "location": "step_definitions/google.steps.ts:21"
+              "location": "step_definitions/google.steps.ts:18"
             },
             "result": {
               "status": "passed",
-              "duration": 3824000000
+              "duration": 72000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 10,
-            "name": "I should see the listings of Feluda",
+            "name": "I click on the 'Search Now' button",
             "match": {
-              "location": "step_definitions/google.steps.ts:25"
+              "location": "step_definitions/google.steps.ts:24"
             },
             "result": {
               "status": "passed",
-              "duration": 663000000
+              "duration": 3037000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I should see the listings of Value1",
+            "match": {
+              "location": "step_definitions/google.steps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 440000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/scenarioHook.ts:13"
+              "location": "hooks/scenarioHook.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 23000000
+              "duration": 1000000
             }
           }
         ]
       },
       {
-        "id": "to-open-google-page-and-search-for-feluda;navigate-to-google-page-and-search-for-dam",
+        "id": "to-open-google-page-and-search-for-values;navigate-to-google-page-and-search-for-value2",
         "keyword": "Scenario",
-        "line": 13,
-        "name": "Navigate to google page and search for Dam",
+        "line": 14,
+        "name": "Navigate to google page and search for Value2",
         "tags": [
           {
             "name": "@smoke",
-            "line": 12
+            "line": 13
           }
         ],
         "type": "scenario",
@@ -190,60 +190,60 @@
           {
             "arguments": [],
             "keyword": "Given ",
-            "line": 14,
-            "name": "I navigate to Google Page to search for Dam",
-            "match": {
-              "location": "step_definitions/google.steps.ts:32"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1141000000
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
             "line": 15,
-            "name": "I search for Dam",
+            "name": "I navigate to Google Page to search for Value2",
             "match": {
-              "location": "step_definitions/google.steps.ts:38"
+              "location": "step_definitions/google.steps.ts:35"
             },
             "result": {
               "status": "passed",
-              "duration": 48000000
+              "duration": 879000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 16,
-            "name": "I click on the Search Now button to search for Dam",
+            "name": "I search for Value2",
             "match": {
-              "location": "step_definitions/google.steps.ts:42"
+              "location": "step_definitions/google.steps.ts:41"
             },
             "result": {
               "status": "passed",
-              "duration": 3114000000
+              "duration": 67000000
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
             "line": 17,
-            "name": "I should see the listings of Dam",
+            "name": "I click on the 'Search Now' button to search for Value2",
             "match": {
-              "location": "step_definitions/google.steps.ts:46"
+              "location": "step_definitions/google.steps.ts:47"
             },
             "result": {
               "status": "passed",
-              "duration": 632000000
+              "duration": 2081000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "I should see the listings of Value2",
+            "match": {
+              "location": "step_definitions/google.steps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 390000000
             }
           },
           {
             "keyword": "After",
             "hidden": true,
             "match": {
-              "location": "hooks/scenarioHook.ts:13"
+              "location": "hooks/scenarioHook.ts:21"
             },
             "result": {
               "status": "passed",
