@@ -54,14 +54,14 @@ var locators = {
         value: "DropDownList"
     }
 };
-var facebookLoginPage = /** @class */ (function (_super) {
-    __extends(facebookLoginPage, _super);
-    function facebookLoginPage() {
+var telerikHome = /** @class */ (function (_super) {
+    __extends(telerikHome, _super);
+    function telerikHome() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.dropDownList = _this.ElementLocator(locators.dropDownList);
         return _this;
     }
-    facebookLoginPage.prototype.get = function () {
+    telerikHome.prototype.get = function () {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
@@ -73,7 +73,7 @@ var facebookLoginPage = /** @class */ (function (_super) {
             });
         });
     };
-    return facebookLoginPage;
+    return telerikHome;
 }(basePage_1.basePage));
-exports.facebookLoginPage = facebookLoginPage;
+exports.telerikHome = telerikHome;
 //# sourceMappingURL=telerikDemoPage.js.map

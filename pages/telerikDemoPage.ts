@@ -9,7 +9,7 @@ const locators = {
     }
 }
 
-export class facebookLoginPage extends basePage {
+export class telerikHome extends basePage {
 
     dropDownList = this.ElementLocator(locators.dropDownList);
 

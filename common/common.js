@@ -133,9 +133,12 @@ var common = /** @class */ (function () {
             });
         });
     };
-    common.prototype.selectOptions = function () {
+    common.prototype.clickElementByClassname = function (locator, item) {
         return __awaiter(this, void 0, void 0, function () {
             return __generator(this, function (_a) {
+                protractor_1.element.all(protractor_1.by.className(locator)).then(function (items) {
+                    items[item].click();
+                });
                 return [2 /*return*/];
             });
         });
