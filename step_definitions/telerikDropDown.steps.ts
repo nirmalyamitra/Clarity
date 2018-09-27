@@ -4,7 +4,6 @@ import { telerikHome } from '../pages/telerikDemoPage';
 import { telerikDropDown } from '../pages/telerikDropDownPage'
 import { common } from '../common/common';
 import { async } from 'q';
-import { browser } from 'protractor';
 import { dataFile } from '../hooks/scenarioHook';
 var winston = require('winston');
 
@@ -33,9 +32,6 @@ var winston = require('winston');
     });
     Then(/^I select a size from "Size" drop down$/, async () =>{
         //await global.clickElementByClassname(telerikDropDownDemo.sizeDropDown,1);
-        await element.all(by.className(<any>telerikDropDownDemo.sizeDropDown)).then(function (items) {
-            items[1].click();
-        });
 
     });
     Then(/^I click on "Customize" button$/, async () =>{
